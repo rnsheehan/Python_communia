@@ -1,0 +1,21 @@
+Some thoughts on why directory names should include trailing '/'
+
+In windows directory names include '\', e.g. c:\users\Robert\dir_name\
+
+However, in Unix / Linux and programming languages arising from C the character '\' is interpreted
+as the escape character, hence '\n', '\t' etc. For this reason when writing code 
+directory names should never include '\' but only ever use '/'
+
+c:\users\Robert\dir_name\ is not correct
+
+c:/users/Robert/dir_name/ is correct
+
+https://stackoverflow.com/questions/980255/should-a-directory-path-variable-end-with-a-trailing-slash
+
+https://stackoverflow.com/questions/2736144/python-add-trailing-slash-to-directory-string-os-independently
+
+http://resources.esri.com/help/9.3/arcgisdesktop/com/gp_toolref/sharing_tools_and_toolboxes/pathnames_explained_colon_absolute_relative_unc_and_url.htm
+
+https://en.wikipedia.org/wiki/Path_(computing)
+
+R. Sheehan 16 - 8 - 2017

@@ -1,0 +1,7 @@
+# need to extract the xstar value from the dir name
+        searchObj = re.findall(r'\d*\.\d+|\d+', dir)
+
+        if searchObj:
+##            print searchObj
+            xstararray[pos] = float(searchObj[3])
+            xuarray[pos] = float(searchObj[4])
